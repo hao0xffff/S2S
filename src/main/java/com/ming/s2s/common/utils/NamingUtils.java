@@ -1,4 +1,4 @@
-package com.ming.s2s.common;
+package com.ming.s2s.common.utils;
 
 import org.apache.commons.lang3.text.WordUtils;
 
