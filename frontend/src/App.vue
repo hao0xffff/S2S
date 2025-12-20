@@ -3,7 +3,7 @@
     <el-header class="app-header">
       <div class="header-content">
         <div class="header-left">
-          <el-icon class="icon-main"><Document /></el-icon>
+          <img src="/S2S_logo.svg" alt="S2S Logo" class="logo-img" />
           <div class="header-text">
             <h1 class="title">S2S Engine</h1>
             <p class="subtitle">SQL to SpringBoot · Strategy Architecture V3.0</p>
@@ -68,7 +68,7 @@
 </template>
 
 <script setup lang="ts">
-import { Document } from '@element-plus/icons-vue'
+// Logo is loaded from public folder
 </script>
 
 <style scoped>
@@ -138,15 +138,22 @@ import { Document } from '@element-plus/icons-vue'
   line-height: 1.2;
 }
 
-/* 图标样式 - 精致动效 */
-.icon-main {
-  color: #2af598;
-  font-size: 32px;
-  animation: iconPulse 4s ease-in-out infinite;
+/* Logo 样式 - 精致动效 */
+.logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  animation: logoPulse 4s ease-in-out infinite;
   filter: drop-shadow(0 2px 6px rgba(42, 245, 152, 0.3));
+  transition: all 0.3s ease;
 }
 
-@keyframes iconPulse {
+.logo-img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 12px rgba(42, 245, 152, 0.5));
+}
+
+@keyframes logoPulse {
   0%, 100% {
     transform: scale(1);
     filter: drop-shadow(0 2px 6px rgba(42, 245, 152, 0.3));

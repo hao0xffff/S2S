@@ -1,4 +1,15 @@
+<div align="center">
+
+![S2S Logo](./frontend/public/S2S_logo.svg)
+
 # S2S - SQL to SpringBoot 代码生成工具
+
+**智能代码生成工具 · 策略架构 V3.0**
+
+[![Version](https://img.shields.io/badge/version-v3.0-blue.svg)](https://github.com/hao0xffff/S2S)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+</div>
 
 ## 📖 项目介绍
 
